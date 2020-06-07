@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans SC", sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+/* header */
+.logo {
+  width: 100px;
+  height: 70%;
+}
+.header {
+  font-weight: 200;
+  border-bottom: 1px solid #8080805e;
+}
+/* End header */
+
+/* Navbar */
+.sigin {
+  cursor: pointer;
+}
+/* End Navbar */
+
+/* new book */
+.bg-light {
+  box-shadow: 1px 3px 6px #cac5c5;
+  background-color: white !important;
+}
+.star {
+  color: #ffc120;
+}
+.item-image {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+p.author {
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+span.price-sale {
+  font-size: 25px;
+  font-weight: 700;
+}
+p.price {
+  text-decoration: line-through;
+  color: gray;
+  margin-bottom: 0.5rem;
+}
+.item-book {
+  transition: 0.5s;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.item-book:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px #8080808f;
+  transition: 0.5s;
+  z-index: 1;
+}
+.new-book {
+  background-color: #f4f4f4;
+}
+.title-newBook {
+  position: relative;
+  width: 250px;
+  margin: auto;
+  z-index: 1;
+  background-color: #f4f4f4;
+}
+.title-content {
+  position: relative;
+}
+.div-line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  top: 20px;
+  z-index: 0;
+}
+/* End new book */
+
+/* Footer */
+.footer ul {
+  list-style: none;
+}
+.footer ul li {
+  text-align: center;
+}
+/* End Footer */

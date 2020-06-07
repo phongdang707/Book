@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="./asset/css/index.css" />
+    <!-- font google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="container-fluid">
+      <div class="row header">
+        <div class="col-12 col-lg-2 text-center mt-lg-2">
+          <img
+            src="./asset/images/kissclipart-clip-art-books-clipart-book-clip-art-2ae223db35fd5e01.png"
+            alt=""
+            class="logo"
+          />
+        </div>
+        <div class="col-8 col-lg-7">
+          <div class="input-group mt-lg-4">
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Amount (to the nearest dollar)"
+              placeholder="Tìm trong nhà sách Văn Lĩnh"
+            />
+            <div class="input-group-append">
+              <a href="">
+                <span class="input-group-text">
+                  <i class="fas fa-search"></i> Tìm kiếm</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 col-lg-1 text-center offset-lg-1 mt-lg-4">
+          <!-- Nút Đăng nhập -->
+          <div
+            class="sigin"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            data-whatever="@mdo"
+          >
+            <i class="fas fa-user"></i>
+            <br />
+            <p>Đăng nhập</p>
+          </div>
+          <!-- End nút đăng nhập -->
+          <!-- Khi bấm đăng nhập sẽ hiện ra cái form đăng nhập -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Đặng nhập
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label"
+                        >Tên tài khoản</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Mật khẩu</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                      />
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Thoát
+                      </button>
+                      <button type="submit" class="btn btn-primary">
+                        Đăng nhập
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Kêt thúc Khi bấm đăng nhập sẽ hiện ra cái form đăng nhập -->
+        </div>
+        <div class="col-2 col-lg-1 text-center mt-lg-4">
+          <i class="fas fa-shopping-cart"></i>
+
+          <p>Giỏ Hàng</p>
+        </div>
+      </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Danh mục sản phẩm
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Sách Tiếng Anh Mầm Non</a>
+              <a class="dropdown-item" href="#">Sách Tiếng Anh Tiểu Học</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Sách Tiếng Anh Trung Học</a>
+              <a class="dropdown-item" href="#">Sách Tiếng Anh Trung Học</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End navbar -->
+    <!-- New Book -->
+    <div class="new-book">
+      <div class="container pt-5 pb-5">
+        <div class="title-content">
+          <div class="div-line"></div>
+          <h1 class="text-center title-newBook">Sách mới</h1>
+        </div>
+
+        <div class="row mt-5">
+          <!-- item book -->
+          <div class="col-6 col-lg-3 item-book pb-4">
+            <a href="">
+              <img
+                class="item-image"
+                src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
+                alt=""
+              />
+              <p class="title">
+                Family and Friends 3 American English Student's book
+              </p>
+              <p class="author">Anh Lĩnh Khoai To</p>
+              <span class="price-sale">60.167 ₫</span>
+              <p class="price">60.166 ₫</p>
+
+              <span class="star"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i
+              ></span>
+            </a>
+          </div>
+          <!-- end item book -->
+          <!-- item book -->
+          <div class="col-6 col-lg-3 item-book pb-4">
+            <a href="">
+              <img
+                class="item-image"
+                src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
+                alt=""
+              />
+              <p class="title">
+                Family and Friends 3 American English Student's book
+              </p>
+              <p class="author">Anh Lĩnh Khoai To</p>
+              <span class="price-sale">60.167 ₫</span>
+              <p class="price">60.166 ₫</p>
+
+              <span class="star"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i
+              ></span>
+            </a>
+          </div>
+          <!-- end item book -->
+          <!-- item book -->
+          <div class="col-6 col-lg-3 item-book pb-4">
+            <a href="">
+              <img
+                class="item-image"
+                src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
+                alt=""
+              />
+              <p class="title">
+                Family and Friends 3 American English Student's book
+              </p>
+              <p class="author">Anh Lĩnh Khoai To</p>
+              <span class="price-sale">60.167 ₫</span>
+              <p class="price">60.166 ₫</p>
+
+              <span class="star"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i
+              ></span>
+            </a>
+          </div>
+          <!-- end item book -->
+          <!-- item book -->
+          <div class="col-6 col-lg-3 item-book pb-4">
+            <a href="">
+              <img
+                class="item-image"
+                src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
+                alt=""
+              />
+              <p class="title">
+                Family and Friends 3 American English Student's book
+              </p>
+              <p class="author">Anh Lĩnh Khoai To</p>
+              <span class="price-sale">60.167 ₫</span>
+              <p class="price">60.166 ₫</p>
+
+              <span class="star"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i
+              ></span>
+            </a>
+          </div>
+          <!-- end item book -->
+          <!-- item book -->
+          <div class="col-6 col-lg-3 item-book pb-4">
+            <a href="">
+              <img
+                class="item-image"
+                src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
+                alt=""
+              />
+              <p class="title">
+                Family and Friends 3 American English Student's book
+              </p>
+              <p class="author">Anh Lĩnh Khoai To</p>
+              <span class="price-sale">60.167 ₫</span>
+              <p class="price">60.166 ₫</p>
+
+              <span class="star"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i
+              ></span>
+            </a>
+          </div>
+          <!-- end item book -->
+          <!-- item book -->
+          <div class="col-6 col-lg-3 item-book pb-4">
+            <a href="">
+              <img
+                class="item-image"
+                src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
+                alt=""
+              />
+              <p class="title">
+                Family and Friends 3 American English Student's book
+              </p>
+              <p class="author">Anh Lĩnh Khoai To</p>
+              <span class="price-sale">60.167 ₫</span>
+              <p class="price">60.166 ₫</p>
+
+              <span class="star"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i
+              ></span>
+            </a>
+          </div>
+          <!-- end item book -->
+          <!-- item book -->
+          <div class="col-6 col-lg-3 item-book pb-4">
+            <a href="">
+              <img
+                class="item-image"
+                src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
+                alt=""
+              />
+              <p class="title">
+                Family and Friends 3 American English Student's book
+              </p>
+              <p class="author">Anh Lĩnh Khoai To</p>
+              <span class="price-sale">60.167 ₫</span>
+              <p class="price">60.166 ₫</p>
+
+              <span class="star"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i
+              ></span>
+            </a>
+          </div>
+          <!-- end item book -->
+          <!-- item book -->
+          <div class="col-6 col-lg-3 item-book pb-4">
+            <a href="">
+              <img
+                class="item-image"
+                src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
+                alt=""
+              />
+              <p class="title">
+                Family and Friends 3 American English Student's book
+              </p>
+              <p class="author">Anh Lĩnh Khoai To</p>
+              <span class="price-sale">60.167 ₫</span>
+              <p class="price">60.166 ₫</p>
+
+              <span class="star"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i
+              ></span>
+            </a>
+          </div>
+          <!-- end item book -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid pt-5 footer">
+      <div class="row">
+        <div class="col-12 col-lg-3">
+          <div class="h3 text-center">THÔNG TIN</div>
+          <ul>
+            <li>Chính sách đổi trả</li>
+            <li>Chính sách đổi trả</li>
+            <li>Sơ đồ trang web</li>
+            <li>Điều khoản sử dụng</li>
+            <li>
+              Giới thiệu
+            </li>
+            <li>
+              Liên hệ
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="h3">DỊCH VỤ KHÁCH HÀNG</div>
+          <ul>
+            <li>Tìm kiếm</li>
+            <li>Sản phẩm đã xem</li>
+            <li>So sánh danh sách sản phẩm</li>
+            <li>
+              Quà tặng
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="h3 text-center">TÀI KHOẢN CỦA TÔI</div>
+          <ul>
+            <li>
+              Tài khoản
+            </li>
+            <li>Đơn đặt hàng</li>
+            <li>
+              Địa chỉ
+            </li>
+            <li>
+              Giỏ hàng
+            </li>
+            <li>
+              Danh sách yêu thích
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="h3 text-center">LIÊN HỆ</div>
+          <ul>
+            <li>
+              ĐT:0123456789
+            </li>
+            <li>Email:book@gmail.com</li>
+            <li>
+              Địa chỉ: 123 Hồ Chí Minh
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <!-- End New Book -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
