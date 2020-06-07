@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./asset/css/index.css" />
     <!-- font google -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -113,6 +113,9 @@
                         id="exampleInputPassword1"
                       />
                     </div>
+                    <div class="alert alert-danger login" role="alert">
+                      Tài khoản mật khẩu không đúng
+                    </div>
                     <div class="modal-footer">
                       <button
                         type="button"
@@ -133,42 +136,32 @@
           <!-- Kêt thúc Khi bấm đăng nhập sẽ hiện ra cái form đăng nhập -->
         </div>
         <div class="col-2 col-lg-1 text-center mt-lg-4">
-          <i class="fas fa-shopping-cart"></i>
-
+          <i class="fas fa-shopping-cart">
+          </i>
+          <span class="sad">0</span>
           <p>Giỏ Hàng</p>
         </div>
       </div>
     </div>
     <!-- End header -->
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Danh mục sản phẩm
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Sách Tiếng Anh Mầm Non</a>
-              <a class="dropdown-item" href="#">Sách Tiếng Anh Tiểu Học</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Sách Tiếng Anh Trung Học</a>
-              <a class="dropdown-item" href="#">Sách Tiếng Anh Trung Học</a>
-            </div>
-          </li>
-        </ul>
+    <!-- navbarv -->
+    <div class="container-fluid nn">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fas fa-bars float-left mt-1"></i>
+          <span class="float-left ml-3"> Danh mục sách</span>
+          <i class="fas fa-caret-down float-right mt-1"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Sách dành cho thiếu nhi</a>
+          <a href="#">Sách dành tiếng anh trung học</a>
+          <a href="#">Sách dành tiếng anh tiểu học</a>
+        </div>
       </div>
-    </nav>
-    <!-- End navbar -->
+    </div>
+
+    <!-- End navbarv -->
     <!-- New Book -->
     <div class="new-book">
       <div class="container pt-5 pb-5">
@@ -179,187 +172,203 @@
 
         <div class="row mt-5">
           <!-- item book -->
-          <div class="col-6 col-lg-3 item-book pb-4">
-            <a href="">
+          <div class="col-6 col-lg-3 pb-4">
+            <div class="item-book">
               <img
                 class="item-image"
                 src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
                 alt=""
               />
-              <p class="title">
-                Family and Friends 3 American English Student's book
-              </p>
-              <p class="author">Anh Lĩnh Khoai To</p>
-              <span class="price-sale">60.167 ₫</span>
-              <p class="price">60.166 ₫</p>
+              <div class="item-book-content">
+                <p class="title">
+                  Family and Friends 3 American English Student's book
+                </p>
+                <p class="author">Anh Lĩnh Khoai To</p>
+                <span class="price-sale">60.167 ₫</span>
+                <p class="price">60.166 ₫</p>
 
-              <span class="star"
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i
-              ></span>
-            </a>
+                <span class="star"
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i
+                ></span>
+              </div>
+            </div>
           </div>
           <!-- end item book -->
           <!-- item book -->
-          <div class="col-6 col-lg-3 item-book pb-4">
-            <a href="">
+          <div class="col-6 col-lg-3 pb-4">
+            <div class="item-book">
               <img
                 class="item-image"
                 src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
                 alt=""
               />
-              <p class="title">
-                Family and Friends 3 American English Student's book
-              </p>
-              <p class="author">Anh Lĩnh Khoai To</p>
-              <span class="price-sale">60.167 ₫</span>
-              <p class="price">60.166 ₫</p>
+              <div class="item-book-content">
+                <p class="title">
+                  Family and Friends 3 American English Student's book
+                </p>
+                <p class="author">Anh Lĩnh Khoai To</p>
+                <span class="price-sale">60.167 ₫</span>
+                <p class="price">60.166 ₫</p>
 
-              <span class="star"
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i
-              ></span>
-            </a>
+                <span class="star"
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i
+                ></span>
+              </div>
+            </div>
           </div>
           <!-- end item book -->
           <!-- item book -->
-          <div class="col-6 col-lg-3 item-book pb-4">
-            <a href="">
+          <div class="col-6 col-lg-3 pb-4">
+            <div class="item-book">
               <img
                 class="item-image"
                 src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
                 alt=""
               />
-              <p class="title">
-                Family and Friends 3 American English Student's book
-              </p>
-              <p class="author">Anh Lĩnh Khoai To</p>
-              <span class="price-sale">60.167 ₫</span>
-              <p class="price">60.166 ₫</p>
+              <div class="item-book-content">
+                <p class="title">
+                  Family and Friends 3 American English Student's book
+                </p>
+                <p class="author">Anh Lĩnh Khoai To</p>
+                <span class="price-sale">60.167 ₫</span>
+                <p class="price">60.166 ₫</p>
 
-              <span class="star"
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i
-              ></span>
-            </a>
+                <span class="star"
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i
+                ></span>
+              </div>
+            </div>
           </div>
           <!-- end item book -->
           <!-- item book -->
-          <div class="col-6 col-lg-3 item-book pb-4">
-            <a href="">
+          <div class="col-6 col-lg-3 pb-4">
+            <div class="item-book">
               <img
                 class="item-image"
                 src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
                 alt=""
               />
-              <p class="title">
-                Family and Friends 3 American English Student's book
-              </p>
-              <p class="author">Anh Lĩnh Khoai To</p>
-              <span class="price-sale">60.167 ₫</span>
-              <p class="price">60.166 ₫</p>
+              <div class="item-book-content">
+                <p class="title">
+                  Family and Friends 3 American English Student's book
+                </p>
+                <p class="author">Anh Lĩnh Khoai To</p>
+                <span class="price-sale">60.167 ₫</span>
+                <p class="price">60.166 ₫</p>
 
-              <span class="star"
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i
-              ></span>
-            </a>
+                <span class="star"
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i
+                ></span>
+              </div>
+            </div>
           </div>
           <!-- end item book -->
           <!-- item book -->
-          <div class="col-6 col-lg-3 item-book pb-4">
-            <a href="">
+          <div class="col-6 col-lg-3 pb-4">
+            <div class="item-book">
               <img
                 class="item-image"
                 src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
                 alt=""
               />
-              <p class="title">
-                Family and Friends 3 American English Student's book
-              </p>
-              <p class="author">Anh Lĩnh Khoai To</p>
-              <span class="price-sale">60.167 ₫</span>
-              <p class="price">60.166 ₫</p>
+              <div class="item-book-content">
+                <p class="title">
+                  Family and Friends 3 American English Student's book
+                </p>
+                <p class="author">Anh Lĩnh Khoai To</p>
+                <span class="price-sale">60.167 ₫</span>
+                <p class="price">60.166 ₫</p>
 
-              <span class="star"
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i
-              ></span>
-            </a>
+                <span class="star"
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i
+                ></span>
+              </div>
+            </div>
           </div>
           <!-- end item book -->
           <!-- item book -->
-          <div class="col-6 col-lg-3 item-book pb-4">
-            <a href="">
+          <div class="col-6 col-lg-3 pb-4">
+            <div class="item-book">
               <img
                 class="item-image"
                 src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
                 alt=""
               />
-              <p class="title">
-                Family and Friends 3 American English Student's book
-              </p>
-              <p class="author">Anh Lĩnh Khoai To</p>
-              <span class="price-sale">60.167 ₫</span>
-              <p class="price">60.166 ₫</p>
+              <div class="item-book-content">
+                <p class="title">
+                  Family and Friends 3 American English Student's book
+                </p>
+                <p class="author">Anh Lĩnh Khoai To</p>
+                <span class="price-sale">60.167 ₫</span>
+                <p class="price">60.166 ₫</p>
 
-              <span class="star"
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i
-              ></span>
-            </a>
+                <span class="star"
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i
+                ></span>
+              </div>
+            </div>
           </div>
           <!-- end item book -->
           <!-- item book -->
-          <div class="col-6 col-lg-3 item-book pb-4">
-            <a href="">
+          <div class="col-6 col-lg-3 pb-4">
+            <div class="item-book">
               <img
                 class="item-image"
                 src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
                 alt=""
               />
-              <p class="title">
-                Family and Friends 3 American English Student's book
-              </p>
-              <p class="author">Anh Lĩnh Khoai To</p>
-              <span class="price-sale">60.167 ₫</span>
-              <p class="price">60.166 ₫</p>
+              <div class="item-book-content">
+                <p class="title">
+                  Family and Friends 3 American English Student's book
+                </p>
+                <p class="author">Anh Lĩnh Khoai To</p>
+                <span class="price-sale">60.167 ₫</span>
+                <p class="price">60.166 ₫</p>
 
-              <span class="star"
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i
-              ></span>
-            </a>
+                <span class="star"
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i
+                ></span>
+              </div>
+            </div>
           </div>
           <!-- end item book -->
           <!-- item book -->
-          <div class="col-6 col-lg-3 item-book pb-4">
-            <a href="">
+          <div class="col-6 col-lg-3 pb-4">
+            <div class="item-book">
               <img
                 class="item-image"
                 src="https://salt.tikicdn.com/cache/280x280/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg"
                 alt=""
               />
-              <p class="title">
-                Family and Friends 3 American English Student's book
-              </p>
-              <p class="author">Anh Lĩnh Khoai To</p>
-              <span class="price-sale">60.167 ₫</span>
-              <p class="price">60.166 ₫</p>
+              <div class="item-book-content">
+                <p class="title">
+                  Family and Friends 3 American English Student's book
+                </p>
+                <p class="author">Anh Lĩnh Khoai To</p>
+                <span class="price-sale">60.167 ₫</span>
+                <p class="price">60.166 ₫</p>
 
-              <span class="star"
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i
-              ></span>
-            </a>
+                <span class="star"
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i
+                ></span>
+              </div>
+            </div>
           </div>
           <!-- end item book -->
         </div>
